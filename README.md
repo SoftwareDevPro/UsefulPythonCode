@@ -1,7 +1,7 @@
 # Useful Python Code
 
 ## Unpacking
->>> a, b, c = 1, 2, 3
+>>> a, b, c = 1, 2, 3<br />
 >>> a, b, c
 (1, 2, 3)
 >>> a, b, c = [1,2,3]
