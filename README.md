@@ -19,3 +19,10 @@
 3<br />
 \>\>\> d<br />
 4<br />
+<br />
+## Unpacking for swapping variables:
+
+\>\>\> a, b = 1, 2<br />
+\>\>\> a, b, = b, a<br />
+\>\>\> a, b<br />
+(2, 1)<br />
