@@ -20,9 +20,24 @@
 \>\>\> d<br />
 4<br />
 <br />
+
 ## Unpacking for swapping variables:
 
 \>\>\> a, b = 1, 2<br />
 \>\>\> a, b, = b, a<br />
 \>\>\> a, b<br />
 (2, 1)<br />
+<br />
+
+## Extended unpacking (use in Python 3 only)
+
+\>\>\> a, *b, c = [1, 2, 3, 4, 5]<br />
+\>\>\> a<br />
+1<br />
+\>\>\> b<br />
+[2,3,4]<br />
+\>\>\> c<br />
+5<br />
+
+<br />
+
