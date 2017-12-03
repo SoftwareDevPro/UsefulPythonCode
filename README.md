@@ -52,8 +52,17 @@
 <br />
 
 ## List slices (a[start:end])
+
 \>\>\> a = [0,1,2,3,4,5,6,7,8,9,10]<br />
 \>\>\> a[2:8]<br />
 [2,3,4,5,6,7]<br />
+
+<br />
+
+## List Slices with Negative Indexing
+
+>\>\> a = [0,1,3,4,5,6,7,8,9,10]<br />
+>\>\> a[-4:-2]<br />
+[7,8]<br />
 
 <br />
