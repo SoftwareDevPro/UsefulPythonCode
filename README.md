@@ -111,7 +111,7 @@
 \>\>\> LASTTHREE = slice(-3, None)<br />
 \>\>\> LASTTHREE<br />
 slice(-3, None)<br />
->>> a[LASTTHREE]<br />
+\>\>\> a[LASTTHREE]<br />
 [3,4,5]<br />
 
 <br />
