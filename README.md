@@ -116,6 +116,17 @@ slice(-3, None)<br />
 
 <br />
 
+## Iterating over list index and value pairs (enumerate)
+
+\>\>\> a = ['Hello','world','!']<br />
+\>\>\> for i,x in enumerate(a):<br />
+\.\.\.     print '{}: {}'.format(i,x)<br />
+\.\.\.<br />
+0: Hello<br />
+1: world<br />
+2: !<br />
+
+<br />
 
 
 
