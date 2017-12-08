@@ -67,7 +67,7 @@
 
 <br />
 
-## List Slices with Step \(a\[start\:end\:step\]\)
+## List Slices with Step \(a\[start\: end\: step\]\)
 
 \>\>\> a = [0,1,2,3,4,5,6,7,8,9,10]<br />
 \>\>\> a[::2]<br />
@@ -79,3 +79,15 @@
 
 
 <br />
+
+## List Slices with negative step
+
+\>\>\> a = [0,1,2,3,4,5,6,7,8,9,10]<br />
+\>\>\> a[::-1]<br />
+[10,9,8,7,6,5,4,3,2,1,0]<br />
+\>\>\> a[::-2]<br />
+[10,8,6,4,2,0]<br />
+
+<br />
+
+
