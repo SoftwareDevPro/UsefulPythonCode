@@ -105,4 +105,17 @@
 
 <br />
 
+## Naming Slices (slice(start,end,step))
+
+\>\>\> a = [0,1,2,3,4,5]<br />
+\>\>\> LASTTHREE = slice(-3, None)<br />
+\>\>\> LASTTHREE<br />
+slice(-3, None)<br />
+>>> a[LASTTHREE]<br />
+[3,4,5]<br />
+
+<br />
+
+
+
 
