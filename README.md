@@ -128,5 +128,29 @@ slice(-3, None)<br />
 
 <br />
 
+## Iterating over dictionary key and value pairs (dict.iteritems)
+
+\>\>\> m = {'a': 1, 'b': 2, 'c': 3, 'd': 4}<br />
+\>\>\> for k,v, in m.itermitems():<br />
+\.\.\.   print '{}:{}'.format(k, v)<br />
+\.\.\.<br />
+a: 1<br />
+c: 3<br />
+b: 2<br />
+d: 4<br />
+
+<br />
+
+## Zipping and unzipping list and iterables
+
+\>\>\> a = [1,2,3]<br />
+\>\>\> b = ['a','b','c']<br />
+\>\>\> z = zip(a,b)<br />
+\>\>\> z<br />
+[(1,'a'),(2,'b'),(3,'c')]<br />
+\>\>\>(*z)<br />
+[(1,2,3),('a','b','c')]<br />
+
+<br />
 
 
