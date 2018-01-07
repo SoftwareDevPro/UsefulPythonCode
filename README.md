@@ -153,4 +153,26 @@ d: 4<br />
 
 <br />
 
+## Grouping adjacent list items using zip
+
+\>\>\> a = [1,2,3,4,5,6]<br />
+\>\>\> # Using iterators<br />
+\>\>\> group_adjacent = lambda a, k: zip(*([iter(a)]*k))<br />
+\>\>\> group_adjacent(a,3)<br />
+[(1,2,3),(4,5,6)]<br />
+\>\>\> group_adjacent(a,2)<br />
+[(1,2),(3,4),(5,6)]<br />
+\>\>\> group_adjacent(a,2)<br />
+[(1,),(2,),(3,),(4,),(5,),(6,)]<br />
+\>\>\> # Using slices<br />
+\>\>\> from itertools import slice<br />
+\>\>\> group_adjacent = lambda a, k: zip(*(islice(a,i,None,k) for i in range(k)))<br />
+\>\>\> group_adjacent(a,3)<br />
+[(1,2,3),(4,5,6)]<br />
+\>\>\> group_adjacent(a,2)<br />
+[(1,2),(3,4),(5,6)]<br />
+\>\>\> group_adjacent(a,2)<br />
+[(1,),(2,),(3,),(4,),(5,),(6,)]<br />
+
+<br />
 
