@@ -176,3 +176,20 @@ d: 4<br />
 
 <br />
 
+## Sliding windows (n-grams) using zip and iterators
+
+\>\>\> from itertools import islice<br />
+\>\>\> def n_grams(a, n):<br />
+...  z = (islice(a, i, None) for i in range(n))<br />
+...  return zip(*z)<br />
+...<br />
+\>\>\> a = [1,2,3,4,5,6]<br />
+\>\>\> n_grams(a, 3)<br />
+[(1,2,3),(2,3,4),(3,4,5),(4,5,6)]<br />
+\>\>\> n_grams(a, 2)<br />
+[(1,2),(2,3),(3,4),(4,5),(5,6)]<br />
+\>\>\> n_grams(a, 4)<br />
+[(1,2,3,4),(2,3,4,5),(3,4,5,6)]<br />
+
+<br />
+
