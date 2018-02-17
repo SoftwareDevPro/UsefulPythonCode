@@ -180,8 +180,8 @@ d: 4<br />
 
 \>\>\> from itertools import islice<br />
 \>\>\> def n_grams(a, n):<br />
-\.\.\.\  z = (islice(a, i, None) for i in range(n))<br />
-\.\.\.\  return zip(*z)<br />
+\.\.\.  z = (islice(a, i, None) for i in range(n))<br />
+\.\.\.  return zip(*z)<br />
 \.\.\.<br />
 \>\>\> a = [1,2,3,4,5,6]<br />
 \>\>\> n_grams(a, 3)<br />
