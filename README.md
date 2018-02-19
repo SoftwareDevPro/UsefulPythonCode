@@ -193,3 +193,15 @@ d: 4<br />
 
 <br />
 
+## Inverting a dictionary using zip
+
+\>\>\> m = {'a':1,'b':2,'c':3,'d':4}<br />
+\>\>\> m.items()<br />
+[('a',1),('c',3),('b',2),('d',4)]<br />
+\>\>\> zip(m.values(), m.keys())<br />
+[(1,'a'),(3,'c'),(2,'b'),(4,'d')]
+\>\>\> mi = dict(zip(m.values(), m.keys()))<br />
+\>\>\> mi<br />
+{'a':1,'b':2,'c':3,'d':4}<br />
+
+<br />
