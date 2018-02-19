@@ -205,3 +205,22 @@ d: 4<br />
 {'a':1,'b':2,'c':3,'d':4}<br />
 
 <br />
+
+## Flattening lists
+
+\>\>\> a = [[1,2],[3,4],[5,6]]<br />
+\>\>\> list(itertools.chain.from_iterable(a))<br />
+[1,2,3,4,5,6]<br />
+<br />
+\>\>\> sum(a, [])<br />
+[1,2,3,4,5,6]<br />
+<br />
+\>\>\> [x for l in a for x in l]<br />
+[1,2,3,4,5,6]<br />
+<br />
+\>\>\> a = [[[1,2],[3,4]],[[5,6],[7,8]]]<br />
+\>\>\> flatten = lambda x: [y for l in x for y in flatten(l)] if type(x) is list else [x]<br />
+\>\>\> flatten(a)<br />
+[1,2,3,4,5,6,7,8]<br />
+
+<br />
