@@ -224,3 +224,22 @@ d: 4<br />
 [1,2,3,4,5,6,7,8]<br />
 
 <br />
+
+## Generator expressions
+
+\>\>\> g = (x ** 2 for x in xrange(10))<br />
+\>\>\> next(g)<br />
+0<br />
+\>\>\> next(g)<br />
+1<br />
+\>\>\> next(g)<br />
+4<br />
+\>\>\> next(g)<br />
+9<br />
+\>\>\> sum(x ** 3 for x in xrange(10))<br />
+2025<br />
+\>\>\> sum(x ** 3 for x in xrange(10) if x % 3 == 1)<br />
+408<br />
+
+<br />
+
