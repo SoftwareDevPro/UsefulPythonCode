@@ -255,4 +255,16 @@ d: 4<br />
 
 <br />
 
+## Inverting a dictionary using a dictionary comprehension
+
+\>\>\> m = {'a': 1,'b': 2, 'c': 3, 'd': 4}<br />
+\>\>\> m<br />
+{'d': 4, 'a': 1, 'b': 2, 'c': 3}<br />
+\>\>\> {v:k for k,v in m.items()}<br />
+{1: 'a', 2: 'b', 3: 'c', 4: 'd'}<br />
+
+<br />
+
+
+
 
