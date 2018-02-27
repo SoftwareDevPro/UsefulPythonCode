@@ -265,6 +265,17 @@ d: 4<br />
 
 <br />
 
+## Named tuples (collections.namedtuple)
+
+\>\>\> Point = collections.namedtuple('Point', ['x','y'])<br />
+\>\>\> p = Point(x=1.0, y=2.0)<br />
+\>\>\> p<br />
+Point(x=1.0, y=2.0)<br />
+\>\>\> p.x<br />
+1.0<br />
+\>\>\> p.y<br />
+2.0<br />
+
 
 
 
