@@ -276,6 +276,21 @@ Point(x=1.0, y=2.0)<br />
 \>\>\> p.y<br />
 2.0<br />
 
+<br />
+
+## Inheriting from named tuples
+
+\>\>\> class Point(collections.namedtuple('PointBase',['x','y'])):<br />
+\.\.\.  __ slots__ = ()<br />
+\.\.\.  def __add__(self, other):<br />
+\.\.\.    return Point(x=self.x + other.x, y=self.y + other.y)<br />
+\.\.\.<br />
+\>\>\> p = Point(x=1.0, y=2.0)<br />
+\>\>\> q = Point(x=2.0, y=3.0)<br />
+\>\>\> p + q<br />
+Point(x=3.0, y=5.0)<br />
+
+<br />
 
 
 
