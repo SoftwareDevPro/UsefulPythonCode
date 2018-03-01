@@ -315,4 +315,24 @@ True<br />
 
 <br />
 
+## Multisets and multiset operations (collections.counter)
+
+\>\>\> A = collections.Counter([1,2,2])<br />
+\>\>\> B = collections.Counter([2,2,3])<br />
+\>\>\> A<br />
+Counter({2:2, 1:1})<br />
+\>\>\> B<br />
+Counter({2: 2, 3: 1})<br />
+\>\>\> A | B<br />
+Counter({2: 2, 1: 1, 3: 1})<br />
+\>\>\> A & B<br />
+Counter({2: 2})<br />
+\>\>\> A + B<br />
+Counter({2: 4, 1: 1, 3: 1})<br />
+\>\>\> A - B<br />
+Counter({1: 1})<br />
+\>\>\> B - A<br />
+Counter({3: 1})<br />
+
+<br />
 
