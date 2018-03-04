@@ -336,3 +336,16 @@ Counter({3: 1})<br />
 
 <br />
 
+## Most common elements in an iterable (collections.counter)
+
+\>\>\> A = collections.Counter([1, 1, 2, 2, 3, 3 3, 3, 4, 5, 6, 7])<br />
+\>\>\> A<br />
+Counter({3: 4, 1: 2, 2: 2, 4: 1, 5: 1, 6: 1, 7: 1})<br />
+\>\>\> A.most_common(1)<br />
+[(3,4)]<br />
+\>\>\> A.most_common(3)<br />
+[(3,4),(1,2),(2,2)])<br />
+
+<br />
+
+
