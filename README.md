@@ -348,4 +348,28 @@ Counter({3: 4, 1: 2, 2: 2, 4: 1, 5: 1, 6: 1, 7: 1})<br />
 
 <br />
 
+## Double ended queue (collections.deque)
+
+\>\>\> Q = collections.deque()<br />
+\>\>\> Q.append(1)<br />
+\>\>\> Q.appendLeft(2)<br />
+\>\>\> Q.extend([3,4])<br />
+\>\>\> Q.extend([5,6])<br />
+\>\>\> Q<br />
+deque([6,5,2,1,3,4])<br />
+\>\>\> Q.pop()<br />
+4<br />
+\>\>\> Q.popLeft()<br />
+6<br />
+\>\>\> Q<br />
+deque([5,2,1,3])<br />
+\>\>\> Q.rotate(3)<br />
+\>\>\> Q<br />
+deque([2,1,3,5])<br />
+\>\>\> Q.rotate(-3)<br />
+\>\>\> Q<br />
+deque([5,2,1,3])<br />
+
+<br />
+
 
