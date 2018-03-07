@@ -372,4 +372,24 @@ deque([5,2,1,3])<br />
 
 <br />
 
+## Double ended queue with maximum length (collections.deque)
+
+\>\>\> last_three = collections.deque(maxlen=3)<br />
+\>\>\> for i in xrange(10):<br />
+...    last_three.append(i)<br />
+...    print ','.join(str(x) for x in last_three)<br />
+...<br />
+0<br />
+0,1<br />
+0,1,2<br />
+1,2,3<br />
+2,3,4<br />
+3,4,5<br />
+4,5,6<br />
+5,6,7<br />
+6,7,8<br />
+7,8,9<br />
+
+<br />
+
 
