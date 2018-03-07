@@ -392,4 +392,18 @@ deque([5,2,1,3])<br />
 
 <br />
 
+## Ordered dictionaries (collections.OrderedDict)
+
+\>\>\> m = dict(str(x), x) for x in range(10))<br />
+\>\>\> print ','.join(m.keys())<br />
+1,0,3,2,5,4,7,6,9,8<br />
+\>\>\> m = collections.OrderedDict((str(x), x) for x in range(10))<br />
+\>\>\> print ','.join(m.keys())<br />
+0,1,2,3,4,5,6,7,8,9<br />
+\>\>\> m = collections.OrderedDict((str(x), x) for x in range(10, 0, -1))<br />
+\>\>\> print ','.join(m.keys())<br />
+10,9,8,7,6,5,4,3,2,1<br />
+
+<br />
+
 
