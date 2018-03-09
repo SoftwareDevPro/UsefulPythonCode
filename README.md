@@ -406,4 +406,29 @@ deque([5,2,1,3])<br />
 
 <br />
 
+## Default dictionaries (collections.defaultdict)
 
+\>\>\> m = dict()<br />
+\>\>\> m['a']<br />
+Traceback (most recent call last):<br />
+ File "<stdin>", line 1, in <module><br />
+KeyError: 'a'<br />
+\>\>\><br />
+\>\>\> m = collections.defaultdict(int)<br />
+\>\>\> m['a']<br />
+0<br />
+\>\>\> m['b']<br />
+0<br />
+\>\>\> m = collections.defaultdict(str)<br />
+\>\>\> m['a']<br />
+''<br />
+\>\>\> m['b'] += 'a'<br />
+\>\>\> m['b']<br />
+'a'<br />
+\>\>\> m = collections.defaultdict(lambda: '[default value]')<br />
+\>\>\> m['a']<br />
+'[default value]'<br />
+\>\>\> m['b']<br />
+'[default value]'<br />
+  
+<br />
