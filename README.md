@@ -432,3 +432,41 @@ KeyError: 'a'<br />
 '[default value]'<br />
   
 <br />
+
+## Using default dictionaries to represent simple trees
+
+\>\>\> import json<br />
+\>\>\> tree = lambda: collections.defaultdict(tree)<br />
+\>\>\> root = tree()<br />
+\>\>\> root['menu']['id'] = 'file<br />
+\>\>\> root['menu']['value'] = 'File'<br />
+\>\>\> root['menu']['menuitems']['new']['value'] = 'New'<br />
+\>\>\> root['menu']['menuitems']['new']['onclick'] = 'new();'<br />
+\>\>\> root['menu']['menuitems']['open']['value'] = 'Open'<br />
+\>\>\> root['menu']['menuitems']['open']['onclick'] = 'open();'<br />
+\>\>\> root['menu']['menuitems']['close']['value'] = 'Close'<br />
+\>\>\> root['menu']['menuitems']['close']['onclick'] = 'close();'<br />
+\>\>\> print json.dumps(root, sort_keys=True, indent=4, separators=(',',':'))<br />
+{<br />
+  "menu:": {<br />
+    "id:" "file",<br />
+    "menuitems": {<br />
+      "close": {<br />
+          "onclick": "close();",<br />
+          "value": "Close"<br />
+      },<br />
+      "new": {<br />
+          "onclick": "new();",<br />
+          "value": "New"<br />
+      },<br />
+      "open": {<br />
+          "onclick": "open();",<br />
+          "value": "Open"<br />
+      }<br />
+    },<br />
+    "value": "File"<br />
+  }<br />
+}<br />
+
+<br />
+
