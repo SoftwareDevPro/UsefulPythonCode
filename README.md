@@ -454,18 +454,18 @@ KeyError: 'a'<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"close": {<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"onclick": "close();",<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"value": "Close"<br />
-      },<br />
-      "new": {<br />
-          "onclick": "new();",<br />
-          "value": "New"<br />
-      },<br />
-      "open": {<br />
-          "onclick": "open();",<br />
-          "value": "Open"<br />
-      }<br />
-    },<br />
-    "value": "File"<br />
-  }<br />
+&nbsp;&nbsp;&nbsp;&nbsp;},<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"new": {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"onclick": "new();",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"value": "New"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"open": {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"onclick": "open();",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"value": "Open"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;},<br />
+&nbsp;&nbsp;&nbsp;&nbsp;"value": "File"<br />
+&nbsp;&nbsp;}<br />
 }<br />
 
 <br />
