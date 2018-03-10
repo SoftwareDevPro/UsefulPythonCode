@@ -448,12 +448,12 @@ KeyError: 'a'<br />
 \>\>\> root['menu']['menuitems']['close']['onclick'] = 'close();'<br />
 \>\>\> print json.dumps(root, sort_keys=True, indent=4, separators=(',',':'))<br />
 {<br />
-  "menu:": {<br />
-    "id:" "file",<br />
-    "menuitems": {<br />
-      "close": {<br />
-          "onclick": "close();",<br />
-          "value": "Close"<br />
+&nbsp;&nbsp;"menu:": {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;"id:" "file",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;"menuitems": {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"close": {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"onclick": "close();",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"value": "Close"<br />
       },<br />
       "new": {<br />
           "onclick": "new();",<br />
