@@ -470,3 +470,21 @@ KeyError: 'a'<br />
 
 <br />
 
+## Mapping objects to unique counting numbers (collections.defaultdict)
+
+\>\>\> import itertools, collections<br />
+\>\>\> value_to_numeric_map = collections.defaultdict(itertools.count().next)<br />
+\>\>\> value_to_numeric_map['a']<br />
+0<br />
+>>> value_to_numeric_map['b']<br />
+1<br />
+>>> value_to_numeric_map['c']<br />
+2<br />
+>>> value_to_numeric_map['a']<br />
+0<br />
+>>> value_to_numeric_map['b']<br />
+1<br />
+
+<br />
+
+
