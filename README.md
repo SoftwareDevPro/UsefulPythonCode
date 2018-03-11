@@ -476,13 +476,13 @@ KeyError: 'a'<br />
 \>\>\> value_to_numeric_map = collections.defaultdict(itertools.count().next)<br />
 \>\>\> value_to_numeric_map['a']<br />
 0<br />
->>> value_to_numeric_map['b']<br />
+\>\>\> value_to_numeric_map['b']<br />
 1<br />
->>> value_to_numeric_map['c']<br />
+\>\>\> value_to_numeric_map['c']<br />
 2<br />
->>> value_to_numeric_map['a']<br />
+\>\>\> value_to_numeric_map['a']<br />
 0<br />
->>> value_to_numeric_map['b']<br />
+\>\>\> value_to_numeric_map['b']<br />
 1<br />
 
 <br />
