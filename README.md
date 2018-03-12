@@ -487,4 +487,15 @@ KeyError: 'a'<br />
 
 <br />
 
+## Largest and smallest elements (heapq.nlargest and heapq.nsmallest)
+
+\>\>\> a = [random.randint(0, 100) for __ in xrange(100)]<br />
+\>\>\> heapq.nsmallest(5, a)<br />
+[3,3,5,6,8]<br />
+\>\>\> heapq.nlargest(5, a)<br />
+[100,100,99,98,98]<br />
+
+<br />
+
+
 
