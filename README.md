@@ -497,5 +497,35 @@ KeyError: 'a'<br />
 
 <br />
 
+## Cartesian products (itertools.product)
 
+\>\>\> for p in itertools.product([1,2,3],[4,5]):<br />
+(1,4)<br />
+(1,5)<br />
+(2,4)<br />
+(2,5)<br />
+(3,4)<br />
+(3,5)<br />
+\>\>\> for p in itertools.product([0,1], repeat=4):<br />
+...    print ''.join(str(x) for x in p)<br />
+...<br />
+0000<br />
+0001<br />
+0010<br />
+0011<br />
+0011<br />
+0100<br />
+0101<br />
+0110<br />
+0111<br />
+1000<br />
+1001<br />
+1010<br />
+1011<br />
+1100<br />
+1101<br />
+1110<br />
+1111<br />
+
+<br />
 
